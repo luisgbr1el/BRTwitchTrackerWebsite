@@ -36,7 +36,7 @@
     <div class="users">
 
       <div class="user">
-        <a id="userId" v-bind:href="'https://twitch.tv/'+ primeiro.user_name" target="_blank">
+        <a id="userId" v-bind:href="'https://twitch.tv/'+ primeiro.user_login" target="_blank">
         <h1 id="position" style="float:left;">#1</h1>
         
         <img id="creatorLogo" v-bind:src="primeiroFoto">
@@ -53,7 +53,7 @@
 
       
       <div class="user">
-      <a id="userId" v-bind:href="'https://twitch.tv/'+ segundo.user_name" target="_blank">
+      <a id="userId" v-bind:href="'https://twitch.tv/'+ segundo.user_login" target="_blank">
         <h1 id="position" style="float:left;">#2</h1>
         
         <img id="creatorLogo" v-bind:src="segundoFoto">
@@ -69,7 +69,7 @@
 
     
       <div class="user">
-      <a id="userId" v-bind:href="'https://twitch.tv/'+ terceiro.user_name" target="_blank">
+      <a id="userId" v-bind:href="'https://twitch.tv/'+ terceiro.user_login" target="_blank">
       <h1 id="position" style="float:left;">#3</h1>
       
       <img id="creatorLogo" v-bind:src="terceiroFoto">
@@ -85,7 +85,7 @@
 
     
       <div class="user">
-      <a id="userId" v-bind:href="'https://twitch.tv/'+ quarto.user_name" target="_blank">
+      <a id="userId" v-bind:href="'https://twitch.tv/'+ quarto.user_login" target="_blank">
       <h1 id="position" style="float:left;">#4</h1>
       <img id="creatorLogo" v-bind:src="quartoFoto">
         
@@ -100,7 +100,7 @@
 
     
       <div class="user">
-      <a id="userId" v-bind:href="'https://twitch.tv/'+ quinto.user_name" target="_blank">
+      <a id="userId" v-bind:href="'https://twitch.tv/'+ quinto.user_login" target="_blank">
       <h1 id="position" style="float:left;">#5</h1>
       
       <img id="creatorLogo" v-bind:src="quintoFoto">
@@ -117,7 +117,7 @@
 
     
        <div class="user">
-       <a id="userId" v-bind:href="'https://twitch.tv/'+ sexto.user_name" target="_blank">
+       <a id="userId" v-bind:href="'https://twitch.tv/'+ sexto.user_login" target="_blank">
        <h1 id="position" style="float:left;">#6</h1>
         
        <img id="creatorLogo" v-bind:src="sextoFoto">
@@ -133,7 +133,7 @@
 
     
        <div class="user">
-       <a id="userId" v-bind:href="'https://twitch.tv/'+ setimo.user_name" target="_blank">
+       <a id="userId" v-bind:href="'https://twitch.tv/'+ setimo.user_login" target="_blank">
        <h1 id="position" style="float:left;">#7</h1>
        
        <img id="creatorLogo" v-bind:src="setimoFoto">
@@ -150,7 +150,7 @@
 
     
        <div class="user">
-       <a id="userId" v-bind:href="'https://twitch.tv/'+ oitavo.user_name" target="_blank">
+       <a id="userId" v-bind:href="'https://twitch.tv/'+ oitavo.user_login" target="_blank">
        <h1 id="position" style="float:left;">#8</h1>
         
        <img id="creatorLogo" v-bind:src="oitavoFoto">
@@ -167,7 +167,7 @@
 
     
        <div class="user">
-       <a id="userId" v-bind:href="'https://twitch.tv/'+ nono.user_name" target="_blank">
+       <a id="userId" v-bind:href="'https://twitch.tv/'+ nono.user_login" target="_blank">
        <h1 id="position" style="float:left;">#9</h1>
         
        <img id="creatorLogo" v-bind:src="nonoFoto">
@@ -184,7 +184,7 @@
 
     
        <div class="user">
-       <a id="userId" v-bind:href="'https://twitch.tv/'+ decimo.user_name" target="_blank">
+       <a id="userId" v-bind:href="'https://twitch.tv/'+ decimo.user_login" target="_blank">
        <h1 id="position" style="float:left;">#10</h1>
        
        <img id="creatorLogo" v-bind:src="decimoFoto">
@@ -221,7 +221,7 @@
     
     <div class="footer">
     Feito por Luis Gabriel &copy; 2022 <br>
-    <a href="https://github.com/luisgbr1el" target="_blank"><i class="fa-brands fa-github"></i></a>⠀
+    <a href="https://github.com/luisgbr1el/brtwitchtracker-website" target="_blank"><i class="fa-brands fa-github"></i></a>⠀
     <a href="https://twitter.com/luisgbr1el" target="_blank"><i class="fa-brands fa-twitter"></i></a>⠀<a href="mailto:harrycorpmail@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a>
     </div>
   </center>
@@ -262,7 +262,7 @@ export default {
     // GET request using axios with set headers
     const headers = {
       "Authorization": "Bearer <Auth-token>",
-      "Client-Id": "<client-id>",
+      "Client-Id": "<Client-Id>",
     };
     axios
       .get("https://api.twitch.tv/helix/streams?first=10&language=pt", {
@@ -287,7 +287,7 @@ export default {
           this.minutes = "às " + ("0" + d.getHours()).slice(-2) + "h" + ("0" + d.getMinutes()).slice(-2) + "m";
 
 
-          const url = "https://api.twitch.tv/helix/users?login=" + response.data['data'][0]['user_name'];
+          const url = "https://api.twitch.tv/helix/users?login=" + response.data['data'][0]['user_login'];
           axios
            .get(url, {
            headers,
@@ -297,7 +297,7 @@ export default {
 
            })
 
-          const url2 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][1]['user_name'];
+          const url2 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][1]['user_login'];
           axios
            .get(url2, {
            headers,
@@ -307,7 +307,7 @@ export default {
 
            })
 
-           const url3 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][2]['user_name'];
+           const url3 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][2]['user_login'];
           axios
            .get(url3, {
            headers,
@@ -317,7 +317,7 @@ export default {
 
            })
 
-           const url4 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][3]['user_name'];
+           const url4 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][3]['user_login'];
           axios
            .get(url4, {
            headers,
@@ -327,7 +327,7 @@ export default {
 
            })
 
-           const url5 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][4]['user_name'];
+           const url5 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][4]['user_login'];
           axios
            .get(url5, {
            headers,
@@ -337,7 +337,7 @@ export default {
 
            })
 
-           const url6 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][5]['user_name'];
+           const url6 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][5]['user_login'];
           axios
            .get(url6, {
            headers,
@@ -347,7 +347,7 @@ export default {
 
            })
 
-           const url7 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][6]['user_name'];
+           const url7 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][6]['user_login'];
           axios
            .get(url7, {
            headers,
@@ -357,7 +357,7 @@ export default {
 
            })
 
-           const url8 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][7]['user_name'];
+           const url8 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][7]['user_login'];
           axios
            .get(url8, {
            headers,
@@ -367,7 +367,7 @@ export default {
 
            })
 
-           const url9 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][8]['user_name'];
+           const url9 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][8]['user_login'];
           axios
            .get(url9, {
            headers,
@@ -377,7 +377,7 @@ export default {
 
            })
 
-           const url10 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][9]['user_name'];
+           const url10 = "https://api.twitch.tv/helix/users?login=" + response.data['data'][9]['user_login'];
           axios
            .get(url10, {
            headers,
