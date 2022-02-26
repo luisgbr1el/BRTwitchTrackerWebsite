@@ -14,3 +14,36 @@ Um website estático que mostra os 10 streamers da Twitch PT/BR com mais especta
 - JavaScript
 - HTML
 - CSS
+
+
+## Build (writing)
+Você pode compilar esse projeto no seu PC.
+### 1. Clonando repositório
+Primeiramente, você precisa clonar este repositório. Se você estiver usando o **Git**, vá no seu terminal e digite:
+```git
+git clone https://github.com/luisgbr1el/brtwitchtracker-website.git
+```
+
+### 2. Instalando packages
+Para que o website compile no seu *localhost*, você precisa instalar os pacotes necessários.
+
+Então assim que a clonagem do repositório finalizar, abra um terminal na pasta `/brtwitchtracker-website` e digite:
+```node
+npm install
+```
+
+### 3. Twitch API
+Para que você consiga fazer um `HTTP GET` da API da **Twitch**, você precisa criar uma aplicação no site do [Twitch Developers](https://dev.twitch.tv).
+
+Continua...
+
+## Contribua
+Você pode contribuir com o projeto solicitando um [Pull Request](https://github.com/luisgbr1el/brtwitchtracker-website/pulls).
+
+### 1. Criando um fork
+Continua...
+
+Sua contribuição será verificada por mim e se estiver tudo certo, você fará parte desse projeto também!
+
+## Autor
+[luisgbr1el](https://github.com/luisgbr1el)
