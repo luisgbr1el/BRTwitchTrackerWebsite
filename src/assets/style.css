@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 12pt;
+  background: #0e0e10;
+  margin: 0;
+}
+
+img#logo { 
+  width: 30px;
+  transition: 0.2s; 
+}
+
+img#logo:hover {
+  transform: scale(1.07);
+  transition: 0.2s; 
+}
+
+.header {
+  background: #151518;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  align-items: center;
+  font-size: 15pt;
+  display: flex;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+span#breakLine {
+  display: none;  
+}
+
+p#about {
+  margin: 5px;
+  font-size: 14pt;
+}
+
+a#home {
+  text-decoration: none;
+  color: #e6e6e6;
+  text-align: justify;
+}
+
+.user {
+  background: #202024;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: 20px;
+  width: 45%;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.telegram-card {
+  background: #202024;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: 20px;
+  width: 30%;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.telegram-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+h1#telegram-icon {
+  text-align: left;
+  font-size: 50pt;
+  margin: 0;
+  margin-top: -15px;
+  float: left;
+  margin-left: 10px;
+}
+
+p#telegram-desc {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.share {
+  transition: 0.2s;
+  text-align: center;
+  font-size: 14pt;
+}
+
+
+img#creatorLogo {
+  width: 70px;
+  margin-right: 20px;
+  float: right;
+  border-radius: 50%;
+  border: 2px solid #9147ff;
+}
+
+i.fa-user {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.user:hover {
+  background: #151518;
+  transition: 0.2s;
+  box-shadow: -5px 5px 0px #9147ff;
+  transform: scale(1.02);
+}
+
+h1#position {
+  margin: 20px;
+  margin-right: 0;
+}
+
+a#userId {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+.panel {
+  padding-top: 20px;
+  width: 48%;
+  padding-bottom: 20px;
+}
+
+span#timestamp {
+  float: left;
+  font-size: 10pt;
+  color: #aaaaaa;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+
+button#refresh {
+  background: #202024;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12pt;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 2pt;
+  transition: 0.2s;
+  color: #e6e6e6;
+}
+
+.card-header {
+  margin-top: -6px;
+}
+
+.detail {
+  color: #9147ff;
+}
+
+button#refresh:hover {
+  background: #151518;
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+p#livestreamInfo {
+  margin-top: 70px;
+  width: 100%;
+  padding: 0;
+}
+
+i {
+  color: #9147ff;
+  font-weight: normal;
+}
+
+span#gameName {
+  margin-left: 20px;
+  float: left;
+  color: #e6e6e6;
+}
+
+span#spectators {
+  color: #e6e6e6;
+}
+
+span#specAll {
+  float: right;
+  margin-right: 20px;
+}
+
+a#tag {
+  color: #9147ff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a#telegram {
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a#hover {
+  color: black;
+  transition: 0.2s;
+}
+
+.footer {
+  background: #151518;
+  padding: 10px;
+}
+
+  p#about {
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #151518;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9147ff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #151518;  /* creates padding around scroll thumb */
+}
+
+body {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: #9147ff #151518;   /* scroll thumb and track */
+}
+
+
+@media screen and (max-width: 600px) {
+  span#breakLine {
+    display: flex;  
+  }
+
+  span#space {
+    display: none;
+  }
+
+  .telegram-card {
+    width: 75%;
+    font-size: 10pt;
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+
+  h1#telegram-icon {
+    font-size: 30pt;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  p#telegram-desc {
+    margin-right: -15px;
+  }
+
+  .share {
+  margin-left: 30px;
+  transition: 0.2s;
+  text-align: left;
+  font-size: 14pt;
+  }
+
+  .user {
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  .panel {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  img#creatorLogo {
+    width: 15%;
+    margin: 10px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  h1#position {
+    margin: 10px;
+    margin-right: 0;
+  }
+
+  p#livestreamInfo {
+    padding: 10px;
+    margin-top: -4px;
+    margin-bottom: 20px;
+  }
+
+  span#specAll {
+    padding-right: 10px;
+    margin-top: 20px;
+    margin: 0;
+    margin-left: 0;
+    float: left;
+  }
+
+  span#gameName {
+    padding-right: 10px;
+    margin-top: 20px;
+    margin: 0;
+    margin-left: 0;
+    float: left;
+  }
+
+}
