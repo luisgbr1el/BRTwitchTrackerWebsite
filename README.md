@@ -21,7 +21,8 @@ Um website estático que mostra os 10 streamers da Twitch PT/BR com mais especta
 
 
 ## Build
-Você pode compilar esse projeto no seu PC.
+Você pode compilar esse projeto no seu PC. Para isso, siga os passos:
+
 ### 1. Clonando repositório
 Primeiramente, você precisa clonar este repositório. Se você estiver usando o **Git**, vá no seu terminal e digite:
 ```git
@@ -66,7 +67,7 @@ yarn serve
 Agora é só ir em [localhost:8080](http://localhost:8080).
 
 ## Contribua
-Você pode contribuir com o projeto solicitando um [Pull Request](https://github.com/luisgbr1el/brtwitchtracker-website/pulls).
+Você pode contribuir com o projeto solicitando um [Pull Request](https://github.com/luisgbr1el/brtwitchtracker-website/pulls). Caso não saiba como solicitar um, siga os passos abaixo:
 
 ### 1. Criando um fork
 Um *fork* é basicamente a cópia de um repositório, só que sua.
