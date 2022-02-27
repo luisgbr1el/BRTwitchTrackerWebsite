@@ -1,4 +1,6 @@
 # BRTwitchTracker
+<img width="100px" src="https://brtwitchtracker.vercel.app/img/logo_vector.960df01a.svg" />
+
 [![GitHub forks](https://img.shields.io/github/forks/luisgbr1el/brtwitchtracker-website?style=for-the-badge)](https://github.com/luisgbr1el/brtwitchtracker-website/network)
 [![GitHub stars](https://img.shields.io/github/stars/luisgbr1el/brtwitchtracker-website?style=for-the-badge)](https://github.com/luisgbr1el/brtwitchtracker-website/stargazers)
 [![GitHub license](https://img.shields.io/github/license/luisgbr1el/brtwitchtracker-website?style=for-the-badge)](https://github.com/luisgbr1el/brtwitchtracker-website/blob/main/LICENSE)
