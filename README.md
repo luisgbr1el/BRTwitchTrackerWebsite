@@ -26,13 +26,13 @@ Você pode compilar esse projeto no seu PC. Para isso, siga os passos:
 ### 1. Clonando repositório
 Primeiramente, você precisa clonar este repositório. Se você estiver usando o **Git**, vá no seu terminal e digite:
 ```git
-git clone https://github.com/luisgbr1el/brtwitchtracker-website.git
+git clone https://github.com/luisgbr1el/BRTwitchTrackerWebsite.git
 ```
 
 ### 2. Instalando packages
 Para que o website compile no seu *localhost*, você precisa instalar os pacotes necessários.
 
-Então assim que a clonagem do repositório finalizar, abra um terminal na pasta `/brtwitchtracker-website` e digite:
+Então assim que a clonagem do repositório finalizar, abra um terminal na pasta `/BRTwitchTrackerWebsite` e digite:
 ```node
 npm install
 ```
@@ -40,7 +40,7 @@ npm install
 ### 3. Twitch API
 Para que você consiga fazer um `GET Request` da API da **Twitch**, você precisa criar uma aplicação no site do [Twitch Developers](https://dev.twitch.tv). E aí sim, pegar seu `oAuth Token` e o seu `Client Id`.
 
-Com isso, você poderá ir em [src/App.vue](https://github.com/luisgbr1el/brtwitchtracker-website/blob/main/src/App.vue) e inserí-los nos **headers** do *request*, nessa parte do arquivo:
+Com isso, você poderá ir em [src/App.vue](https://github.com/luisgbr1el/BRTwitchTrackerWebsite/blob/main/src/App.vue) e inserí-los nos **headers** do *request*, nessa parte do arquivo:
 ```vue
     const headers = {
       "Authorization": "Bearer <Auth-token>",
@@ -67,7 +67,7 @@ yarn serve
 Agora é só ir em [localhost:8080](http://localhost:8080).
 
 ## Contribua
-Você pode contribuir com o projeto solicitando um [Pull Request](https://github.com/luisgbr1el/brtwitchtracker-website/pulls). Caso não saiba como solicitar um, siga os passos abaixo:
+Você pode contribuir com o projeto solicitando um [Pull Request](https://github.com/luisgbr1el/BRTwitchTrackerWebsite/pulls). Caso não saiba como solicitar um, siga os passos abaixo:
 
 ### 1. Criando um fork
 Um *fork* é basicamente a cópia de um repositório, só que sua.
@@ -85,7 +85,7 @@ Faça isso da forma que achar melhor.
 Modifique o código da forma que traga **melhorias** para o projeto. Qualquer *Pull Request* que de alguma forma "avacalhe" com o projeto, será recusado.
 
 ### 4. Crie um Pull Request
-1. Para realizar um Pull Request, vá na aba de [pulls](https://github.com/luisgbr1el/brtwitchtracker-website/pulls) deste repositório e clique em *New Pull Request*.
+1. Para realizar um Pull Request, vá na aba de [pulls](https://github.com/luisgbr1el/BRTwitchTrackerWebsite/pulls) deste repositório e clique em *New Pull Request*.
 2. Selecione **este** repositório como `base` e o seu fork como `compare`.
 3. Faça um resumo do que você adicionou ou melhorou no código e clique em *Create Pull Request*.
 
